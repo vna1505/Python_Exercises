@@ -1,11 +1,26 @@
-#!/usr/bin/env python3
 
-x=int(input("Enter the number of rows of the choc bar: "))
-y=int(input("Enter the number of columns of the choc bar: "))
-z=int(input("Enter the number of pieces:"))
-if (x*y) < z:
-    print("No")
-elif (x%z == 0) or (y% == 0):
-    print("Yes, it can be broken"+str(z)+"pieces")
+#fibonacci series
+# 0 1 1 2 3 5
+n=int(input("Enter a number for fibonacci:"))
+count=0
+a=0
+b=1
+if n<0:
+    print("Enter a positive value!!")
+elif(n==0):
+    print(n)
+elif(n==1):
+    print(a,',',b)
 else:
-    print("Nooo")
+     while(count<=n):
+        print(a)
+        c=a+b
+        count+=1
+        a=b
+        b=c
+
+
+
+
+
+
