@@ -1,17 +1,23 @@
 
-numbers=[12,23,14,10,111,1,9]
-c=0
+numbers = [12,233,14,10,111,1,9]
+c = 0
 a=max(numbers)
-print('Maximum value is :',a)
+ind_max=numbers.index(a)
+print('Maximum value is :',a,'and index is ', ind_max)
 b=min(numbers)
-print('Minimum value is :',b)
+ind_min=numbers.index(b)
+print('Minimum value is :',b, 'and index is ', ind_min)
 
 for i in range(len(numbers)):
     try:
-        if(a==numbers[i]):
-            
-        numbers[i+1]=numbers[i]
-        numbers[i]=c
+        if(i==ind_max):
+            c=numbers[i]
+        elif (i==ind_min):
+            d=numbers[i]
+
+        numbers[ind_max]=d
+        numbers[ind_min]=c
+
     except:
         pass
 print('The swapped list is :',numbers)
