@@ -9,13 +9,13 @@ for i in range(0,l):
     n.append(seq)
 print(n)
 print(len(n))
-for x in range(len(n)):
-    try:
-        if(n[x+1]>n[x]):
-            c+=1
+for x in range(len(n)-1):
+    #try:
+    if(n[x+1]>n[x]):
+        c+=1
 
-    except:
-        pass
+    #except:
+        #pass
 print(" The neighbours greater are ",c )
 
 
