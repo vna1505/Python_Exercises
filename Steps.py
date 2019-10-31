@@ -1,7 +1,7 @@
 
 step=int(input('Enter the number of steps: '))
 k=int(input('Enter a step number <9:'))
-for i in range(1,step+1):
+for i in range(1,step):
 
     if (i==k):
           for a in range(1,k+1):
